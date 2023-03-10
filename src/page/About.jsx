@@ -12,10 +12,10 @@ const About = () => {
           <LineGradient />
         </div>
         <div className=" sm:flex sm:flex-row justify-center  w-5/6 mx-auto  gap-5   ">
-          <div className="lg:w-[400px] sm:w-[400px]  w-[200px]  mx-auto pb-[5%]  ">
+          <div className="lg:w-[400px] sm:w-[400px]  w-[200px]  mx-auto pb-[5%]  md:order-2  ">
             <img src={profile} className="rounded-[200px] border-2  " />
           </div>
-          <div className="flex flex-col gap-3 xs:text-xl font-serif  ">
+          <div className="flex flex-col gap-3 xs:text-xl font-serif   ">
             <span>
               My name is Ankit Rawat. I'm an Btech student at Graphic Era Hill
               University Computer Science Department. I was born and raised in

@@ -2,7 +2,7 @@ import LineGradient from "../component/LineGradient";
 
 
 
-const Project = ({ title, Project_title, description }) => {
+const Project = ({ title, Project_title, description , code , demo  }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center  text-black bg-white `;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -27,8 +27,8 @@ const Project = ({ title, Project_title, description }) => {
         />
       </div>
       <div className="flex flex-row justify-around  items-end text-xl font-semibold shadow-lg p-[2%] text-gray-500   w-full">
-        <button className="hover:scale-90">Code </button>
-        <button className="hover:scale-90" >Demo</button>
+        <a target="_blank" href={code} className= "  cursor-pointer hover:scale-90">Code </a>
+        <a target="_blank" href={demo} className=" cursor-pointer hover:scale-90" >Demo</a>
       </div>
     </div>
   );
@@ -59,11 +59,15 @@ const Projects = () => {
             title="Project 1"
             Project_title="SportsPortal for Graphic Era "
             description="This is mern stack application to book a slot for sports "
+            code="https://github.com/AnkitRawat9442/SportsPortal"
+            demo="https://gehusportsportal.netlify.app/"
           />
           <Project
             title="Project 2"
             Project_title="Global Oneness .Com"
             description="Thsi is website for coaching institutes"
+            code ="https://github.com/PenndPapers/GlobalOnesnessEducation/tree/Ankit_Test"
+            demo = "https://globaloneness.netlify.app/home"
           />
            
         </div>
