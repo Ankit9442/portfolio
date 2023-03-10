@@ -23,10 +23,10 @@ function App() {
       > 
         <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         </div>
-        {/* <Landing
+        <Landing
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
-        /> */}
+        />
         <div className="bg-gray-500 sm:p-2 p-1 flex flex-col w-fit fixed left-0 top-[50%]  z-50 ">
           <span className="sm:p-2  p-1 m-1 sm:m-2  cursor-pointer inline-flex items-center w-fit  bg-white   rounded   mx-1.5 text-xl  hover:text-white hover:bg-rose-500 hover:scale-125    duration-300 ">
             <CiFacebook size={25} />
