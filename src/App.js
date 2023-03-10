@@ -12,7 +12,7 @@ import Skill from "./page/Skill";
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
 
-  const [isTopOfPage, setIsTopOfPage] = useState(true);
+  // const [isTopOfPage, setIsTopOfPage] = useState(true);
  console.log("app" , selectedPage)
   return (
     <div>

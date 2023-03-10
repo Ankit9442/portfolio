@@ -1,20 +1,21 @@
 import React from "react";
 import Iframe from "react-iframe";
-import LineGradient from "../component/LineGradient"
-const BlogItem = () => {
+
+const BlogItem = ({week , title}) => {
   return (
     <div className="flex flex-col  shadow-xl ">
       <div>
-        <h1 className="font-medium ">Week 1 </h1>
-        <h2 className="text-sm">My Introduction </h2>
+        <h1 className="font-medium ">Week {week} </h1>
+        <h2 className="text-sm"> {title} </h2>
       </div>
       <Iframe
-        url="https://www.youtube.com/embed/xNRJwmlRBNU"
+        url="https://www.youtube.com/embed/wMh7Uzzs0Gk"
         id=""
         className="w-full sm:w-[100%] h-[260px] sm:h-[320px]  py-[3%] "
         display="block"
         position="relative"
       />
+    
     </div>
   );
 };
@@ -29,12 +30,9 @@ const Blog = () => {
          
         </div>
       <div className="grid grid-cols-1 sm:grid-cols-2   gap-5 ">
-        <BlogItem />
-        <BlogItem />
-        <BlogItem />
-        <BlogItem />
-        <BlogItem />
-        <BlogItem />
+        <BlogItem week={1} title={"My Introduction"} />
+        <BlogItem week={2} title={"favourite dialogue from Movie"} />
+       
       </div>
     </section>
   );
