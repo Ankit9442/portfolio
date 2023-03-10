@@ -18,7 +18,7 @@ function App() {
     <div>
       <div
         id="home"
-        // style={{ backgroundImage: `url(${backPhoto})` }}
+        style={{ backgroundImage: `url(${backPhoto})` }}
         className="app bg-cover bg-center w-screen  h-screen py-10 relative "
       > 
         <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
