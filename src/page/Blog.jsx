@@ -1,5 +1,5 @@
 import React from "react";
-// import Iframe from "react-iframe";
+import Iframe from "react-iframe";
 
 const BlogItem = ({week , title}) => {
   return (
@@ -55,7 +55,18 @@ const Blog = () => {
         <BlogItem week={8} title={"A group discussion was conducted based on given scenario.People were working in a coal mine suddenly a was started flooding into the mine,most of the people went out but 4 people were left behind Owner of the mine who is a man of around 45 and 1000 families depend on him for thwie employment,Second was a child around 10 who came their with his father who is a worker of the mine,Third was a female government officer with asthama problem and last one was a scientis who is in his last stage of cancer but has a discovery that can change the world's dependency on non renewable resources. Now the condition was that there is only a single lift and before the place fills up with water where these people are standing we can save only three out of the four people. This was a situation based group discussion and continues for approx 1 hour."}/>
         <BlogItem week={9} title={"Group discussions were conducted on topics like:-Who is smarter men or women -Should beef be banned in india"}/>
         <BlogItem week={10} title={"An activity was conducted in which our class was divided in groups of 7 people each and we were asked to act as the owners of a company with different roles for every team member. My team decided to act as the owner of  a company called Gaze.Ai which is a watch making company. I was enacting the role of the director of the company :)"}/>
-     
+        <h1>Links to our performance:</h1>
+      <a className="text-red-500" target="_blank" href="https://drive.google.com/file/d/1jefLzddQzt1Lay6TVUovNfsRxla_ZSOE/view">link 1</a>
+      <a className="text-red-500" target="_blank" href="https://drive.google.com/file/d/1jgkpgn9ZcTFw-Hcj_wLErwtJzVgiEFtd/view">link 2</a>
+      <a className="text-red-500" target="_blank" href="https://drive.google.com/file/d/1jiInGfwBUCiBvOWcZpgXt-SluLrrW9M9/view">link 3</a>
+         <Iframe
+        url="https://www.youtube.com/embed/wMh7Uzzs0Gk"
+        id=""
+        className="w-full sm:w-[100%] h-[260px] sm:h-[320px]  py-[3%] "
+        display="block"
+        position="relative"
+      />
+      
       </div>
     </section>
   );
